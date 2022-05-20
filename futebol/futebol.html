@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo texto em número</title>
+</head>
+<body>
+    
+    <script>
+
+        function pularLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostrar(frase) {
+            document.write(frase);
+            pularLinha();
+        }
+
+        let vitorias = parseInt(prompt(`Entre com o número de vitórias`));
+        let empates = parseInt(prompt(`Entre com o número de empate`));
+
+        let pontos = (vitorias * 3) + empates;
+
+        mostrar(`Os pontos do seu time é ${pontos}`)
+
+        if(pontos < 28){
+            mostrar(`Seu time está pior que o ano passado`);
+        }
+
+        if(pontos > 28){
+            mostrar(`Seu time está melhor que o ano passado`);
+        }
+
+        if(pontos == 28){
+            mostrar(`Seu time está igual ao ano passado`);
+        }
+
+    </script>
+
+</body>
+</html>

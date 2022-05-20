@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de repetição</title>
+</head>
+<body>
+
+    <script>
+
+        function pularLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function monstrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        let anoCopa = 1930
+        let limite = parseInt(prompt("Entre com o ano limite"));
+
+        while(anoCopa <= limite) {
+            monstrar("Teve copa em " + anoCopa);
+            anoCopa = anoCopa + 4;
+        }
+
+        monstrar("FIM");
+
+    </script>
+    
+</body>
+</html>

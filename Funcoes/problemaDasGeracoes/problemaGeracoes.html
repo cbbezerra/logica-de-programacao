@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        let descobriuBrasil = 1500;
+        let anoAtual = 2022;
+        let idadeTerFilhos = 28;
+
+        let anosQuePassaram = anoAtual - descobriuBrasil;
+
+        let quantidadeGeracao = Math.round(anosQuePassaram/idadeTerFilhos);
+
+        mostrar("Desde a descoberta do Brasil já se passarram " + quantidadeGeracao + " gerações");
+
+    </script>
+    
+</body>
+</html>
