@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>campo de texto e botão</title>
+</head>
+<body>
+
+    <input type="text">
+    <button>Compare com meu segredo</button>
+
+    <script>
+
+        let segredo = Math.round(Math.random() * 10);
+
+        let input = document.querySelector("input");
+        input.focus();
+
+        function verificar() {
+
+            if(input.value == segredo) {
+
+                alert("Você acertou!");
+
+            } else {
+
+                alert("Você errou!!");
+
+            }
+
+            input.value = "";
+            input.focus();
+        }
+
+        let button = document.querySelector("button");
+
+        button.onclick = verificar;
+
+    </script>
+</body>
+</html>
+

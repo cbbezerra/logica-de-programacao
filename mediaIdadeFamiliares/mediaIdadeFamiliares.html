@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acumulando Valores</title>
+</head>
+<body>
+    <script>
+
+        function pularLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+        
+        let totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+        
+        let numero = 1
+        let totalIdades = 0
+ 
+        while(numero <= totalFamiliares){
+
+            let idadeFamiliar = parseInt(prompt("Informe idade do familiar"));
+            totalIdades = totalIdades + idade;
+            numero++;            
+        }
+
+        let mediaDasIdades = (totalIdades/totalFamiliares);]]]
+        mostrar("A media das idades dos familiares é " + mediaDasIdades);
+
+        mostrar("FIM");
+
+
+    </script>
+</body>
+</html>

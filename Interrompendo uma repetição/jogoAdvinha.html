@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interrompendo uma repetição</title>
+</head>
+<body>
+    <script>
+
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        let numeroPensado = Math.round(Math.random() * 10);
+        let tentativas = 1;
+
+        while(tentativas <= 3){
+            let chute = parseInt(prompt("Digite seu chute!"));
+
+            if(chute == numeroPensado){
+                mostrar("Você acertou, o número pensado era " + numeroPensado);
+                break;
+
+            } else {
+                mostrar("Você errou");
+            }
+
+            tentativas++;
+        }
+
+        mostrar("FIM");
+
+    </script>
+</body>
+</html>
